@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: tutelary-example
+
+tutelary:
+  server-url: ws://localhost:9897/ws
+
+server:
+  port: 9098
