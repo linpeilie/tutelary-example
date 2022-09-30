@@ -48,7 +48,7 @@ public class MathGame {
             for (int i = 0; i < 100000000; i++) {
             }
         } catch (Exception e) {
-            System.out.println(String.format("illegalArgumentCount:%3d, ", illegalArgumentCount) + e.getMessage());
+//            System.out.println(String.format("illegalArgumentCount:%3d, ", illegalArgumentCount) + e.getMessage());
         }
     }
 
@@ -60,7 +60,7 @@ public class MathGame {
         if (sb.charAt(sb.length() - 1) == '*') {
             sb.deleteCharAt(sb.length() - 1);
         }
-        System.out.println(sb);
+//        System.out.println(sb);
     }
 
     public List<Integer> primeFactors(int number) {
