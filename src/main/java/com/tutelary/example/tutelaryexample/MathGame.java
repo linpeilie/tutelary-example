@@ -45,8 +45,7 @@ public class MathGame {
             int number = random.nextInt() / 10000;
             List<Integer> primeFactors = primeFactors(number);
             print(number, primeFactors);
-            for (int i = 0; i < 100000000; i++) {
-            }
+            Game.pause();
         } catch (Exception e) {
 //            System.out.println(String.format("illegalArgumentCount:%3d, ", illegalArgumentCount) + e.getMessage());
         }

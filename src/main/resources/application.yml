@@ -5,5 +5,9 @@ spring:
 tutelary:
   server-url: ws://localhost:9897/ws
 
+logging:
+  level:
+    com.tutelary: debug
+
 server:
   port: 9098
