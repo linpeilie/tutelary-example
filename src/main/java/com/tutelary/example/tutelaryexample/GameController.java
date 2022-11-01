@@ -13,6 +13,12 @@ public class GameController {
     @GetMapping(value = "hello")
     public String hello() {
         gameService.pause();
+        try {
+            gameService.throwException();
+        } catch (Exception e) {
+            // ignore
+        }
+        gameService.recursion(0);
         return "Ok";
     }
 
