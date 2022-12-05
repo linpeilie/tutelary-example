@@ -2,6 +2,7 @@ package com.tutelary.example.tutelaryexample;
 
 import cn.hutool.core.thread.ThreadFactoryBuilder;
 import cn.hutool.core.thread.ThreadUtil;
+import cn.hutool.core.util.RandomUtil;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -46,6 +47,11 @@ public class MathGame {
             List<Integer> primeFactors = primeFactors(number);
             print(number, primeFactors);
             Game.pause();
+            int len = RandomUtil.randomInt(1000, 2000000);
+            String[] arr = new String[len];
+            for (int i = 0; i < len; i++) {
+                arr[i] = RandomUtil.randomString(RandomUtil.randomInt(5, 15));
+            }
         } catch (Exception e) {
 //            System.out.println(String.format("illegalArgumentCount:%3d, ", illegalArgumentCount) + e.getMessage());
         }
